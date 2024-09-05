@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/section-sneaker.css">
+  <link rel="stylesheet" href="./src/css/image-zoom.css">
+  <link rel="stylesheet" href="./src/css/conteudo-cart.css">
+  <link rel="stylesheet" href="./src/css/menu-mobile.css">
+  <link rel="stylesheet" href="./src/css/globais.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <title>Choope - Moletons</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav class="nav-container">
+
+      <div class="menu-mobile-fundo"></div>
+      <div class="mobile-menu">
+        <div class="mobile-menu-icon">
+          <button onclick="menuAparecer()"><img class="icon" src="./src/images/icon-close.svg"
+              alt="Imagem Menu Hamburguer"></button>
+        </div>
+        <ul class="list-container-mobile">
+          <li class="item-list"><a class="global-transition" href="#colecao">Coleção</a></li>
+          <li class="item-list"><a class="global-transition" href="#homem">Homem</a></li>
+          <li class="item-list"><a class="global-transition" href="#mulher">Mulher</a></li>
+          <li class="item-list"><a class="global-transition" href="#sobre">Sobre</a></li>
+          <li class="item-list"><a class="global-transition" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuAparecer()"><img class="icon" src="./src/images/icon-menu.svg"
+            alt="Imagem Menu Hamburguer"></button>
+      </div>
+
+      <div class="logo">
+        <a href="#home" id="home">
+          <h1 class="title-logo">choope</h1>
+        </a>
+      </div>
+      <ul class="list-container">
+        <li class="item-list"><a class="global-transition" href="#colecao">Coleção</a></li>
+        <li class="item-list"><a class="global-transition" href="#homem">Homem</a></li>
+        <li class="item-list"><a class="global-transition" href="#mulher">Mulher</a></li>
+        <li class="item-list"><a class="global-transition" href="#sobre">Sobre</a></li>
+        <li class="item-list"><a class="global-transition" href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="perfil">
+        <a class="cart-link" href="#">
+          <h3 class="number-cart"></h3><i class="fas fa-shopping-cart global-transition"></i>
+        </a>
+        <a class="avatar-link" href="#"><img src="./src/images/image-avatar.png" alt="avatar"
+            class="image-avatar global-transition"></a>
+      </div>
+
+
+
+    </nav>
+
+
+
+    <div class="conteudo-cart">
+      <div class="title-conteudo-cart">
+        <h2>Carrrinho</h2>
+      </div>
+      <h2 class="info-cart">Seu carrinho está vazio</h2>
+      <div class="product-add">
+        <img src="./src/images/image-product-1-thumbnail.jpg" alt="Imagem produto adicionado no carrrinho">
+        <div class="info-product-add">
+          <a href="#">
+            <p class="nome-product-add">Fall Limited Edition Sneakers</p>
+            <p class="valor-product-add">$125;00 x 3 <b id="total">$375.00</b></p>
+          </a>
+        </div>
+        <button class="btn-dell global-transition"><i class="fas fa-trash-alt"></i></button>
+      </div>
+      <button class="btn-checkout global-transition">
+        <h3>Checkout</h3>
+      </button>
+    </div>
+    <hr class="hr-header">
+  </header>
+  <main>
+    <section class="sneaker">
+      <div class="container-sneaker">
+        <div class="container-imagens">
+          <div class="carrossel-imagens">
+            <img class="imagem-product image-ativa global-transition" src="./src/images/image-product-1.jpg"
+              alt="Imagem do produto 01">
+            <img class="imagem-product global-transition" src="./src/images/image-product-2.jpg"
+              alt="Imagem do produto 02">
+            <img class="imagem-product global-transition" src="./src/images/image-product-3.jpg"
+              alt="Imagem do produto 03">
+            <img class="imagem-product global-transition" src="./src/images/image-product-4.jpg"
+              alt="Imagem do produto 04">
+          </div>
+          <div class="carrossel-botoes">
+            <button class="btn-image global-transition ativo "><img src="./src/images/image-product-1-thumbnail.jpg"
+                alt="Imagem produto 01" class="opacity"></button>
+            <button class="btn-image global-transition"><img src="./src/images/image-product-2-thumbnail.jpg"
+                alt="Imagem produto 02"></button>
+            <button class="btn-image global-transition"><img src="./src/images/image-product-3-thumbnail.jpg"
+                alt="Imagem produto 03"></button>
+            <button class="btn-image global-transition"><img src="./src/images/image-product-4-thumbnail.jpg"
+                alt="Imagem produto 04"></button>
+          </div>
+        </div>
+        <div class="container-info">
+          <h3 class="title-product">Sneaker Company</h3>
+          <h2 class="title-edition">Fall Limited Edition <br>Sneakers</h2>
+          <p class="info-product">These low-profile sneakers are your perfect casual wear <br> companion. Featuring a
+            durable rubber outer sole, they’ll <br> withstand everything the weather can offer.</p>
+          <div class="value-product">
+            <h2 class="value-desconto">$125.00</h2>
+            <h2 class="desconto">50%</h2>
+          </div>
+          <h3 class="value-origin"><s>$250.00</s></h3>
+          <div class="btns-product">
+            <div class="btn-quantidade">
+              <button><img src="./src/images/icon-minus.svg" alt="Imagem botao menos"></button>
+              <h3>1</h3>
+              <button><img src="./src/images/icon-plus.svg" alt="Imagem botao mais"></button>
+            </div>
+            <button class="btn-add-cart global-transition">
+              <i class="fas fa-shopping-cart"></i>
+              <h3>Add to cart</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden">
+        <div class="container-sneaker">
+          <div class="container-imagens">
+            <div class="btn-close">
+              <button>
+                <i class="fas fa-times global-transition"></i>
+              </button>
+            </div>
+            <div class="carrossel-imagens">
+              <img class="imagem-product image-ativa image-zoom" src="./src/images/image-product-1.jpg"
+                alt="Imagem do produto 01">
+              <img class="imagem-product" src="./src/images/image-product-2.jpg" alt="Imagem do produto 02">
+              <img class="imagem-product" src="./src/images/image-product-3.jpg" alt="Imagem do produto 03">
+              <img class="imagem-product" src="./src/images/image-product-4.jpg" alt="Imagem do produto 04">
+              <button class="btn-voltar">
+                <i class="fas fa-chevron-right global-transition"></i>
+              </button>
+              <button class="btn-proximo">
+                <i class="fas fa-chevron-right global-transition"></i>
+              </button>
+            </div>
+            <div class="carrossel-botoes thumbnail-zoom">
+              <button class="btn-image global-transition ativo "><img src="./src/images/image-product-1-thumbnail.jpg"
+                  alt="Imagem produto 01" class="opacity"></button>
+              <button class="btn-image global-transition"><img src="./src/images/image-product-2-thumbnail.jpg"
+                  alt="Imagem produto 02"></button>
+              <button class="btn-image global-transition"><img src="./src/images/image-product-3-thumbnail.jpg"
+                  alt="Imagem produto 03"></button>
+              <button class="btn-image global-transition"><img src="./src/images/image-product-4-thumbnail.jpg"
+                  alt="Imagem produto 04"></button>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+</body>
+
+</html>

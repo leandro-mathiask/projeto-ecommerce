@@ -1,0 +1,23 @@
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    max-width: 100vw;
+}
+
+.global-transition {
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.btn-imagem-padrao-borda {
+    border: 2px solid var(--cor-primaria);
+}
+
+.btn-imagem-padrao-opacity {
+    opacity: 0.3;
+}
+
+.visible {
+    display: block;
+}

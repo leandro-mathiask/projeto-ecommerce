@@ -1,0 +1,139 @@
+.nav-imagens {
+    padding-top: 3.2rem;
+}
+
+.container-imagens .imagem-product {
+    max-width: 445px;
+    max-height: 445px;
+    border-radius: 15px;
+    display: none;
+}
+
+.container-imagens .imagem-product:hover {
+    cursor: zoom-in;
+}
+
+.container-imagens .imagem-product.image-ativa {
+    display: block;
+}
+
+.container-sneaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 9rem;
+    gap: 10.25rem;
+}
+
+.carrossel-botoes {
+    display: flex;
+    gap: 3.1rem;
+    padding-top: 3.2rem;
+}
+
+.btn-image {
+    height: 88px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+
+.btn-image.ativo {
+    border: 3px solid var(--cor-primaria);
+}
+
+.btn-image img {
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.opacity {
+    opacity: 0.3;
+}
+
+.container-sneaker .container-info .title-product {
+    font-size: 1.3rem;
+    color: var(--dark-grayish-blue);
+    padding-bottom: 2.4rem;
+    text-transform: uppercase;
+}
+
+.container-sneaker .container-info .title-edition {
+    font-size: 4.4rem;
+    padding-bottom: 3.2rem;
+}
+
+.container-sneaker .container-info .info-product {
+    font-size: var(--font-paragrafo);
+    color: var(--dark-grayish-blue);
+    padding-bottom: 2.4rem;
+}
+
+.value-product {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    width: 173px;
+    height: 68px;
+}
+
+.value-product .value-desconto {
+    padding-right: 2.3rem;
+    font-size: 2.8rem;
+}
+
+.value-product .desconto {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    width: 51px;
+    height: 27px;
+    text-align: center;
+    align-content: center;
+}
+
+.container-sneaker .container-info .value-origin {
+    color: var(--dark-grayish-blue);
+    font-size: var(--font-paragrafo);
+    padding-bottom: 3.2rem;
+}
+
+.btns-product {
+    display: flex;
+    gap: 1.6rem;
+    width: 445px;
+    height: 56px;
+}
+
+.btns-product .btn-quantidade {
+    width: 157px;
+    height: 56px;
+    display: flex;
+    gap: 4.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grayish-blue);
+    border-radius: 10px;
+}
+
+.btns-product .btn-quantidade h3 {
+    font-size: var(--font-paragrafo);
+}
+
+.btns-product .btn-add-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.55rem;
+    background-color: var(--cor-primaria);
+    border: none;
+    width: 272px;
+    height: 56px;
+    border-radius: 10px;
+}
+
+.btns-product .btn-add-cart:hover, .btn-checkout:hover {
+    background-color: var(--cor-secundaria);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

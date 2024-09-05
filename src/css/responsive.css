@@ -1,0 +1,73 @@
+@media (max-width: 1080px) {
+    .carrossel-imagens {
+        position: static;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container-sneaker {
+        padding: 0;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .open {
+        display: block;
+    }
+    .nav-container {
+        margin: 1.9rem 2.4rem;
+    }
+    .list-container {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .sneaker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+    .container-sneaker{
+        max-width: 350px;
+    }
+    .container-sneaker .carrossel-imagens img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .container-info {
+        width: 100%;
+        padding: 0 2.4rem;
+    }
+    .container-sneaker .container-info .title-product {
+        font-size: 1.2rem;
+    }
+    .container-sneaker .container-info .title-edition {
+        font-size: 2.8rem;
+    }
+    .container-sneaker .container-info .info-product {
+        font-size: 1.5rem;
+    }
+    .btns-product {
+        display: block;
+        width: 100%;
+    }
+    .btns-product .btn-quantidade {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .btns-product .btn-add-cart {
+        width: 100%;
+    }
+    .conteudo-cart {
+        min-width: 350px;
+        transform: translateX(0);
+    }
+}
